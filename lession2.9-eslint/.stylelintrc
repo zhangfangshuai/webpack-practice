@@ -1,0 +1,8 @@
+{
+    // 继承 stylelint-config-standard 中的所有检查规则
+    "extends": "stylelint-config-standard",
+    // 自定义修改继承过来的规则
+    "rules": {
+        "at-rule-empty-line-before": null
+    }
+}

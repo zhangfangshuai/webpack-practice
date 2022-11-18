@@ -1,0 +1,10 @@
+/* 样式文件 */
+
+#app {
+    text-align: center;
+}
+
+header {
+  font-size: 22px;
+  color: #d33;
+}

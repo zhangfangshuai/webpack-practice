@@ -1,0 +1,22 @@
+/**
+ * @func TypeScript编译器配置文件
+ * @desc JSON格式文件
+ */
+
+ {
+    // 配置ts编译规则
+    "compilerOptions": {
+        // 编译出的代码采用的模块化规范类型
+        "module": "es2015",
+        // 编译出的代码才用ES哪个版本
+        "target": "es2015",
+        // 是否需要输出sourcemap
+        "strict": true,
+
+        "moduleResolution": "node"
+    },
+    // 编译范围不包括的文件夹目录
+    "exclude": [
+        "node_modules"
+    ]
+ }

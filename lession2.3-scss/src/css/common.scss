@@ -1,0 +1,14 @@
+/**
+ * @func 样式文件
+ */
+
+$blue: '#1875e7';
+
+#app {
+    text-align: center;
+    .artical {
+        font-size: 22px;
+        font-weight: bold;
+        color: $blue;
+    }
+} 

@@ -1,0 +1,34 @@
+/**
+ * @func babel配置文件
+ * @desc 一个JSON格式文件，在 Babel 执行编译的过程中，会从项目根目录下的 .babelrc 文件读取配置
+ */
+ 
+ {
+    // plugins 属性告诉 Babel 要使用哪些插件，插件可以控制如何转换代码。
+    // 配置文件里的 transform-runtime 对应的插件全名叫做 babel-plugin-transform-runtime，即在前面加上了 babel-plugin-
+    // babel-plugin-transform-runtime作用是减少冗余代码，比如将class转换成prototype时需要辅助函数，此插件可以避免多次生成辅助函数
+    "plugins": [
+        [
+            "transform-runtime",
+            {
+                "polyfill": true
+            }
+        ]
+    ],
+    // presets 属性告诉 Babel 要转换的源码使用了哪些新的语法特性。一个 Presets 对一组新语法特性提供支持，多个 Presets 可以叠加。
+    // Presets 其实是一组 Plugins 的集合，每一个 Plugin 完成一个新语法的转换工作。
+    // Presets 是按照 ECMAScript 草案来组织的，通常可以分为以下三大类
+    // （1）已被写入ESMAScript标准的，如es2015、es2016、es2017、env等
+    // （2）社区提供单违背写入ESMAScript标准的，如stage-0，stage-1, stage-2, stage-3, stage-4
+    // （3）为了支持一些特定应用场景下的语法，和ESMAScript没有关系。如 babel-preset-react时为了支持React开发中的jsx语法
+    "presets": [
+        [
+            "env",
+            {
+                "modules": false
+            }
+        ],
+        "stage-2",
+    ]
+ }
+

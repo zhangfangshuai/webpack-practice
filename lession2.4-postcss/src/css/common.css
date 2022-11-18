@@ -1,0 +1,11 @@
+/* 本文件使用了css3的变量与法，需使用postcss-loader里的postcss-cssnext插件解析本css文件 */
+
+:root {
+    --red: #d33;
+}
+
+#app {
+    text-align: center;
+    font-size: 22px;
+    color: var(--red);
+}
